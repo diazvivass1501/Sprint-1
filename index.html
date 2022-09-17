@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador - Reto Alura Latam</title>
+</head>
+<body>
+    <main>
+        <img class="logo_alura" src="a.png" alt="Logo Alura">
+        <section class="contenedor">
+            <div class="texto_encriptado">
+                <form>
+                    <textarea id="mensaje" cols="60" rows="15" class="mensaje" required placeholder="Ingrese el texto aquí..."></textarea>
+                    <img class="info_logo" src="info.png" alt="Logo de Información">
+                    <p class="info_p">Solo letras minúsculas y sin acentos</p>
+                    <div class="encriptar_div">
+                        <input type="submit" value="Encriptar" class="encriptar">
+                    </div>
+                    <div class="desencriptar_div">
+                        <input type="submit" value="Desencriptar" class="desencriptar">
+                    </div>
+                </form>
+            </div>
+            <div class="resultado">
+                <img class="muñeco" src="Muneco.png" alt="Muñeco demostrativo">
+                <p class="no_found">Ningún mensaje fue encontrado</p>
+                <p class="alerta_ingresar">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

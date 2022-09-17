@@ -1,0 +1,138 @@
+body{
+    background:#CCCCCC;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+}
+
+div{
+    word-wrap: break-word;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  color:green;
+  background-color: black;
+}
+
+.logo_alura{
+    position:absolute;
+    top:40px;
+    left:60px;
+}
+
+.contenedor{
+    position:relative;
+    top:80px;
+    width:97%;
+    padding:20px;
+    margin:20px 0px 0px 0px;
+    /*background:yellow;*/
+}
+
+.texto_encriptado{
+    box-sizing:border-box;
+    display:inline-block;
+    width:55%;
+    vertical-align:center;
+    padding:10px;
+    /*background:red;*/
+    margin:0px 0px 0px 50px;
+}
+
+.mensaje{
+    font-weight:bold;
+    color:darkblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    background:#CCCCCC;
+    margin:0px 0px 0px 90px;
+    border-color: #CCCCCC;
+}
+
+.mensaje::placeholder{
+    font-weight:bold;
+    color:darkblue;
+}
+
+.info_logo{
+    margin:15px 0px 0px 90px;
+}
+
+.info_p{
+    display:inline-block;
+    margin:0px 0px 0px 10px;
+}
+
+.encriptar_div{
+    position:relative;
+    display:block;
+    left:70px;
+}
+
+.desencriptar_div{
+    position:relative;
+    bottom:45px;
+    left:300px;
+}
+
+.encriptar{
+    position:relative;
+    background:darkblue;
+    color:white;
+    border-radius: 25px;
+    border-style:none;
+    padding:15px 65px;
+    margin:20px auto 0px auto;
+}
+.desencriptar{
+    background: #CCCCCE;
+    color:darkblue;
+    border:solid 1px;
+    border-radius: 25px;
+    border-style:solid;
+    border-color:darkblue;
+    padding:15px 65px;
+}
+
+.resultado{
+    display:inline-block;
+    vertical-align:top;
+    position: relative;
+    bottom:85px;
+    background:white;
+    box-sizing:border-box;
+    width:25%;
+    height: 550px;
+    border-style:none;
+    border-radius: 15px;
+    padding:20px;
+    margin:50px 0px 0px 10px;
+    overflow: hidden;
+}
+
+.muñeco{
+    display: table;
+    margin: 55px auto;
+    box-sizing:border-box;
+    vertical-align:center;
+    width:190px;
+}
+
+.no_found{
+    text-align: center;
+    margin:30px auto 0px auto;
+    color:darkblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.alerta_ingresar{
+    text-align: center;
+    margin:20px auto 0px auto;
+    color:#5c5b5b;
+    font-size: 18px;
+}
