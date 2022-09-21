@@ -11,28 +11,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Encriptador - Reto Alura Latam</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <main>
         <img class="logo_alura" src="a.png" alt="Logo Alura">
         <section class="contenedor">
             <div class="texto_encriptado">
-                <form>
-                    <textarea id="mensaje" cols="60" rows="15" class="mensaje" required placeholder="Ingrese el texto aquí..."></textarea>
-                    <img class="info_logo" src="info.png" alt="Logo de Información">
-                    <p class="info_p">Solo letras minúsculas y sin acentos</p>
-                    <div class="encriptar_div">
-                        <input type="submit" value="Encriptar" class="encriptar">
-                    </div>
-                    <div class="desencriptar_div">
-                        <input type="submit" value="Desencriptar" class="desencriptar">
-                    </div>
-                </form>
+                <textarea id="mensaje-id" cols="60" rows="15" class="mensaje" required placeholder="Ingrese el texto aquí..."></textarea>
+                <img class="info_logo" src="info.png" alt="Logo de Información">
+                <p class="info_p">Solo letras minúsculas y sin acentos</p>
+                <div class="encriptar_div">
+                    <button type="button" class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                </div>
+                <div class="desencriptar_div">
+                    <button type="button" class="desencriptar" onclick="btnDesencriptar()"> Desencriptar</button>
+                </div>
             </div>
-            <div class="resultado">
+            <div id="resultado-none" class="resultado-none">
                 <img class="muñeco" src="Muneco.png" alt="Muñeco demostrativo">
                 <p class="no_found">Ningún mensaje fue encontrado</p>
                 <p class="alerta_ingresar">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="resultado-encriptado" class="resultado-encriptado">
+                <textarea class="encriptada-area" id="mensaje-encriptado-id" cols="26" rows="16" class="mensaje-encriptado" required readonly></textarea>
+                <button type="button" value="Copiar" class="copiar" onclick="btnCopiar()">Copiar</button>
             </div>
         </section>
     </main>
