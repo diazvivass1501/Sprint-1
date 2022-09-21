@@ -70,9 +70,15 @@ function desencriptar(strEncripted){
 }
 
 function copiar(){
-
+    var texto_salida = document.getElementById("mensaje-encriptado-id");
+    texto_salida.select();
+    navigator.clipboard.writeText(texto_salida.value);
+    texto_salida.innerText="";
+    alert("Texto Copiado");
+    document.getElementById("resultado-none").style.display="inline-block";
+    document.getElementById("resultado-encriptado").style.display="none";
 }
 
 function btnCopiar(){
-
+    copiar();
 }
